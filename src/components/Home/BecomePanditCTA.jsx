@@ -3,7 +3,7 @@ import { banners } from "../../assets/data/banners";
 import { useLang } from "../../context/LanguageContext";
 import { t } from "../../constants/translations";
 
-const ctaBanner = banners[1];
+const ctaBanner = banners[0];
 
 const BecomePanditCTA = () => {
   const { lang } = useLang();
