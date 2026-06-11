@@ -43,6 +43,12 @@ export const t = {
     ],
   },
 
+  // Featured Pandits
+  featuredPandits: {
+    title: { en: "Meet Our Trusted Pandits", np: "हाम्रो भरोसायोग्य पण्डितहरू" },
+    subtitle: { en: "Experienced and verified pandits ready to assist families across Nepal.", np: "अनुभवी र प्रमाणित पण्डितहरू, नेपालभरका परिवारहरूलाई सहयोग गर्न तयार।" }
+  },
+
   // Why Choose
   whyChoose: {
     eyebrow:  { en: "Why PanditKhoja",   np: "किन पण्डितखोजा?" },

@@ -11,7 +11,7 @@
             className="w-full object-contain group-hover:scale-105 transition-transform duration-300"
           />
         ) : (
-          <div className="h-44 flex items-center justify-center bg-gradient-to-br from-violet-50 to-violet-100">
+          <div className="h-44 flex items-center justify-center bg-linear-to-br from-violet-50 to-violet-100">
             <span className="text-5xl group-hover:scale-110 transition-transform duration-200 inline-block">
               {icon}
             </span>
