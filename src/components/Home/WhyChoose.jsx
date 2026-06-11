@@ -12,7 +12,7 @@ const WhyChoose = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
           {/* LEFT — text + stats */}
-          <div>
+          <div className="hidden lg:block">
             <span className="inline-block text-[#C62828] font-semibold text-sm uppercase tracking-widest mb-4">
               {w.eyebrow[lang]}
             </span>
