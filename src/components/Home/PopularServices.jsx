@@ -35,7 +35,7 @@ const PopularServices = () => {
   }, [onScroll]);
 
   return (
-    <div className="py-20 md:py-28 bg-gray-50 overflow-hidden">
+    <div className="py-20 md:py-28 bg-[#F5F5F5] overflow-hidden">
       <Container>
         <SectionTitle
           title={ps.title[lang]}
@@ -78,7 +78,7 @@ const PopularServices = () => {
                 el.scrollTo({ left: i * getCardWidth(), behavior: "smooth" });
               }}
               className={`rounded-full transition-all duration-300 ${
-                i === activeIndex ? "w-6 h-2 bg-violet-700" : "w-2 h-2 bg-gray-300 hover:bg-gray-400"
+                i === activeIndex ? "w-6 h-2 bg-[#FF6F00]" : "w-2 h-2 bg-gray-300 hover:bg-gray-400"
               }`}
               aria-label={`Go to slide ${i + 1}`}
             />

@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
+:root {
+  --saffron:     #FF6F00;  /* Primary CTA — 10% */
+  --crimson:     #C62828;  /* Secondary accent — 30% */
+  --alabaster:   #F5F5F5;  /* Background — 60% */
+  --temple-blue: #1B365D;  /* Text & structure */
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
+  background-color: var(--alabaster);
+  color: var(--temple-blue);
 }
 
 /* Hide scrollbar but keep scroll functionality */

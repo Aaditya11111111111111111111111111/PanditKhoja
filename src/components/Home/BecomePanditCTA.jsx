@@ -31,7 +31,7 @@ const BecomePanditCTA = () => {
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <button className="px-8 py-3.5 rounded-full font-medium text-base bg-white text-violet-700 hover:bg-violet-50 transition cursor-pointer">
+            <button className="px-8 py-3.5 rounded-full font-medium text-base bg-white text-[#FF6F00] hover:bg-[#fff3e0] transition cursor-pointer">
               {c.btn1[lang]}
             </button>
             <button className="px-8 py-3.5 rounded-full font-medium text-base bg-white/10 border border-white text-white hover:bg-white/20 backdrop-blur-sm transition cursor-pointer">

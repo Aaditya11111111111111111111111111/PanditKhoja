@@ -6,9 +6,9 @@
   ...props
 }) => {
   const variants = {
-    primary: "bg-violet-700 text-white hover:bg-violet-800",
-    secondary: "border border-gray-300 text-gray-700 hover:bg-gray-100",
-    gold: "bg-violet-500 text-white hover:bg-amber-600",
+    primary: "bg-[#FF6F00] text-white hover:bg-[#e65c00]",
+    secondary: "border border-[#C62828] text-[#C62828] hover:bg-[#fff3e0]",
+    gold: "bg-amber-500 text-white hover:bg-amber-600",
   };
 
   const baseClasses = `

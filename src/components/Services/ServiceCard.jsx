@@ -1,9 +1,9 @@
 ﻿const ServiceCard = ({ icon, title, description, image }) => {
   return (
-    <div className="group flex flex-col bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-violet-300 transition duration-200 cursor-pointer">
+    <div className="group flex flex-col bg-white border border-[#e8d5c4] rounded-2xl overflow-hidden hover:shadow-lg hover:border-[#C62828] transition duration-200 cursor-pointer">
 
       {/* Image — full, no crop */}
-      <div className="bg-gray-50">
+      <div className="bg-[#F5F5F5]">
         {image ? (
           <img
             src={image}
@@ -20,14 +20,14 @@
       </div>
 
       {/* Text body */}
-      <div className="px-5 py-3 border-t border-gray-100">
+      <div className="px-5 py-3 border-t border-[#f0e6d8]">
         <div className="flex items-center gap-2">
           <span className="text-lg">{icon}</span>
-          <h3 className="text-base font-semibold text-gray-900">
+          <h3 className="text-base font-semibold text-[#1B365D]">
             {title}
           </h3>
         </div>
-        <p className="text-gray-500 text-sm mt-1 line-clamp-1">
+        <p className="text-[#4a6080] text-sm mt-1 line-clamp-1">
           {description}
         </p>
       </div>

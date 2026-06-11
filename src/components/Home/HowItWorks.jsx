@@ -1,4 +1,4 @@
-import Container from "../ui/Container";
+﻿import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
 import StepCard from "../howitworks/StepCard";
 
@@ -22,7 +22,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <div className="py-20 md:py-28 bg-gray-50">
+    <div className="py-20 md:py-28 bg-[#F5F5F5]">
       <Container>
 
         <SectionTitle

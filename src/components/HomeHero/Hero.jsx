@@ -72,13 +72,13 @@ const Hero = () => {
       <Container className="relative z-10 py-8 sm:py-16 md:py-28">
         <div className="text-center max-w-4xl mx-auto">
 
-          <div className="inline-block bg-violet-100 text-violet-700 text-xs sm:text-sm font-medium px-3 py-1 sm:px-4 sm:py-1.5 rounded-full mb-4 sm:mb-6">
+          <div className="inline-block bg-[#ffe0b2] text-[#FF6F00] text-xs sm:text-sm font-medium px-3 py-1 sm:px-4 sm:py-1.5 rounded-full mb-4 sm:mb-6">
             {h.badge[lang]}
           </div>
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight tracking-tight">
             {h.heading1[lang]}{" "}
-            <span className="text-violet-300">{h.highlight[lang]}</span>{" "}
+            <span className="text-[#FFB74D]">{h.highlight[lang]}</span>{" "}
             {h.heading2[lang]}
           </h1>
 
@@ -89,13 +89,13 @@ const Hero = () => {
           <div className="mt-6 sm:mt-10 flex flex-row justify-center gap-3">
             <button
               onClick={(e) => e.stopPropagation()}
-              className="px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full font-medium text-sm sm:text-base bg-violet-700 text-white hover:bg-violet-800 transition cursor-pointer"
+              className="px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full font-medium text-sm sm:text-base bg-[#FF6F00] text-white hover:bg-[#e65c00] transition cursor-pointer"
             >
               {h.btn1[lang]}
             </button>
             <button
               onClick={(e) => e.stopPropagation()}
-              className="px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full font-medium text-sm sm:text-base border border-gray-300 text-gray-200 hover:bg-white/10 transition cursor-pointer"
+              className="px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full font-medium text-sm sm:text-base border border-[#d4bfae] text-gray-200 hover:bg-white/10 transition cursor-pointer"
             >
               {h.btn2[lang]}
             </button>
@@ -103,15 +103,15 @@ const Hero = () => {
 
           <div className="mt-6 sm:mt-10 flex flex-row justify-center gap-6 sm:gap-16 text-center divide-x divide-white/20">
             <div className="px-3 sm:px-0">
-              <p className="text-lg sm:text-2xl md:text-3xl font-bold text-violet-300">200+</p>
+              <p className="text-lg sm:text-2xl md:text-3xl font-bold text-[#FFB74D]">200+</p>
               <p className="text-xs sm:text-sm text-gray-300 mt-0.5">{h.stat1[lang]}</p>
             </div>
             <div className="px-3 sm:px-0">
-              <p className="text-lg sm:text-2xl md:text-3xl font-bold text-violet-300">5000+</p>
+              <p className="text-lg sm:text-2xl md:text-3xl font-bold text-[#FFB74D]">5000+</p>
               <p className="text-xs sm:text-sm text-gray-300 mt-0.5">{h.stat2[lang]}</p>
             </div>
             <div className="px-3 sm:px-0">
-              <p className="text-lg sm:text-2xl md:text-3xl font-bold text-violet-300">77+</p>
+              <p className="text-lg sm:text-2xl md:text-3xl font-bold text-[#FFB74D]">77+</p>
               <p className="text-xs sm:text-sm text-gray-300 mt-0.5">{h.stat3[lang]}</p>
             </div>
           </div>

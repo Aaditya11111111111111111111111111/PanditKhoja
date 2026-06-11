@@ -20,14 +20,14 @@ const Pandits = () => {
 
   return (
     <Container className="py-12">
-      <h1 className="text-3xl font-bold text-gray-900">{p.heading[lang]}</h1>
-      <p className="text-gray-600 mt-2">{p.sub[lang]}</p>
+      <h1 className="text-3xl font-bold text-[#1B365D]">{p.heading[lang]}</h1>
+      <p className="text-[#2e4a70] mt-2">{p.sub[lang]}</p>
 
       <div className="mt-6 flex gap-3">
         <input
           type="text"
           placeholder={p.placeholder[lang]}
-          className="w-full border border-gray-300 rounded-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-violet-500"
+          className="w-full border border-[#d4bfae] rounded-full px-5 py-3 focus:outline-none focus:ring-2 focus:ring-[#FF6F00]"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
@@ -38,16 +38,16 @@ const Pandits = () => {
           <div
             key={pandit.id}
             onClick={() => navigate(`/pandits/${pandit.id}`)}
-            className="bg-white border border-gray-200 rounded-2xl overflow-hidden hover:shadow-md transition cursor-pointer"
+            className="bg-white border border-[#e8d5c4] rounded-2xl overflow-hidden hover:shadow-md transition cursor-pointer"
           >
-            <div className="bg-gray-50">
+            <div className="bg-[#F5F5F5]">
               <img src={pandit.image} alt={pandit.name.en} className="w-full object-contain" />
             </div>
             <div className="p-6">
-              <h2 className="text-xl font-semibold text-gray-900">{pandit.name[lang]}</h2>
-              <p className="text-gray-600 mt-1">📍 {pandit.location[lang]}</p>
-              <p className="text-gray-600 mt-1">🎓 {pandit.experience[lang]} {p.experience[lang]}</p>
-              <p className="text-gray-500 mt-2 text-sm">{pandit.specialty[lang]}</p>
+              <h2 className="text-xl font-semibold text-[#1B365D]">{pandit.name[lang]}</h2>
+              <p className="text-[#2e4a70] mt-1">📍 {pandit.location[lang]}</p>
+              <p className="text-[#2e4a70] mt-1">🎓 {pandit.experience[lang]} {p.experience[lang]}</p>
+              <p className="text-[#4a6080] mt-2 text-sm">{pandit.specialty[lang]}</p>
               <div className="mt-5">
                 <Button onClick={(e) => { e.stopPropagation(); window.location.href = `tel:${pandit.phone}`; }}>
                   {p.contact[lang]}

@@ -16,10 +16,10 @@ const PanditDetails = () => {
   if (!pandit) {
     return (
       <Container className="py-12">
-        <h1 className="text-xl font-semibold text-gray-900">
+        <h1 className="text-xl font-semibold text-[#1B365D]">
           {lang === "np" ? "पण्डित फेला परेन" : "Pandit not found"}
         </h1>
-        <button onClick={() => navigate("/pandits")} className="mt-4 text-violet-700 underline text-sm">
+        <button onClick={() => navigate("/pandits")} className="mt-4 text-[#FF6F00] underline text-sm">
           {lang === "np" ? "← पण्डितहरूमा फर्कनुहोस्" : "← Back to Pandits"}
         </button>
       </Container>
@@ -50,14 +50,14 @@ const PanditDetails = () => {
     <Container className="py-10 md:py-16">
 
       <button onClick={() => navigate("/pandits")}
-        className="text-sm text-violet-700 hover:underline mb-6 inline-flex items-center gap-1">
+        className="text-sm text-[#FF6F00] hover:underline mb-6 inline-flex items-center gap-1">
         {label.back[lang]}
       </button>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
 
         {/* LEFT — image */}
-        <div className="bg-gray-50 rounded-2xl overflow-hidden border border-gray-200">
+        <div className="bg-[#F5F5F5] rounded-2xl overflow-hidden border border-[#e8d5c4]">
           <img src={pandit.image} alt={pandit.name.en} className="w-full object-contain" />
         </div>
 
@@ -65,19 +65,19 @@ const PanditDetails = () => {
         <div className="flex flex-col gap-6">
 
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-violet-600 mb-2">
+            <p className="text-xs font-semibold uppercase tracking-widest text-[#C62828] mb-2">
               {label.profile[lang]}
             </p>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-3xl md:text-4xl font-bold text-[#1B365D] leading-tight">
               {pandit.name[lang]}
             </h1>
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <div className="flex items-center gap-2 bg-gray-100 text-gray-700 text-sm font-medium px-4 py-2 rounded-full">
+            <div className="flex items-center gap-2 bg-[#ede8e0] text-[#1B365D] text-sm font-medium px-4 py-2 rounded-full">
               <span>📍</span><span>{pandit.location[lang]}</span>
             </div>
-            <div className="flex items-center gap-2 bg-gray-100 text-gray-700 text-sm font-medium px-4 py-2 rounded-full">
+            <div className="flex items-center gap-2 bg-[#ede8e0] text-[#1B365D] text-sm font-medium px-4 py-2 rounded-full">
               <span>🎓</span><span>{pandit.experience[lang]} {label.experience[lang]}</span>
             </div>
           </div>
@@ -86,7 +86,7 @@ const PanditDetails = () => {
             <p className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2">
               {label.about[lang]}
             </p>
-            <p className="text-gray-600 leading-relaxed text-base">{pandit.bio[lang]}</p>
+            <p className="text-[#2e4a70] leading-relaxed text-base">{pandit.bio[lang]}</p>
           </div>
 
           <div>
@@ -95,14 +95,14 @@ const PanditDetails = () => {
             </p>
             <div className="flex flex-wrap gap-2">
               {pandit.specialty[lang].split(",").map((s, i) => (
-                <span key={i} className="bg-violet-50 text-violet-700 text-sm font-medium px-4 py-1.5 rounded-full border border-violet-200">
+                <span key={i} className="bg-[#fff3e0] text-[#FF6F00] text-sm font-medium px-4 py-1.5 rounded-full border border-[#C62828]">
                   {s.trim()}
                 </span>
               ))}
             </div>
           </div>
 
-          <hr className="border-gray-200" />
+          <hr className="border-[#e8d5c4]" />
 
           <div className="flex flex-col sm:flex-row gap-3">
             <Button onClick={handleWhatsApp} className="flex-1">{label.whatsapp[lang]}</Button>
@@ -118,11 +118,11 @@ const PanditDetails = () => {
       {open && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-xl">
-            <h2 className="text-xl font-semibold text-gray-900">{label.modalTitle[lang]}</h2>
-            <p className="text-sm text-gray-500 mt-1">{label.modalSub[lang]}</p>
-            <input className="w-full border border-gray-300 rounded-lg p-3 mt-4 focus:outline-none focus:ring-2 focus:ring-violet-500" placeholder={lang === "np" ? "तपाईंको नाम" : "Your Name"} />
-            <input className="w-full border border-gray-300 rounded-lg p-3 mt-3 focus:outline-none focus:ring-2 focus:ring-violet-500" placeholder={lang === "np" ? "फोन नम्बर" : "Phone Number"} />
-            <select className="w-full border border-gray-300 rounded-lg p-3 mt-3 focus:outline-none focus:ring-2 focus:ring-violet-500">
+            <h2 className="text-xl font-semibold text-[#1B365D]">{label.modalTitle[lang]}</h2>
+            <p className="text-sm text-[#4a6080] mt-1">{label.modalSub[lang]}</p>
+            <input className="w-full border border-[#d4bfae] rounded-lg p-3 mt-4 focus:outline-none focus:ring-2 focus:ring-[#FF6F00]" placeholder={lang === "np" ? "तपाईंको नाम" : "Your Name"} />
+            <input className="w-full border border-[#d4bfae] rounded-lg p-3 mt-3 focus:outline-none focus:ring-2 focus:ring-[#FF6F00]" placeholder={lang === "np" ? "फोन नम्बर" : "Phone Number"} />
+            <select className="w-full border border-[#d4bfae] rounded-lg p-3 mt-3 focus:outline-none focus:ring-2 focus:ring-[#FF6F00]">
               <option>{lang === "np" ? "विवाह संस्कार" : "Marriage Ceremony"}</option>
               <option>{lang === "np" ? "ब्रतबन्ध" : "Bratabandha"}</option>
               <option>{lang === "np" ? "श्राद्ध" : "Shraddha"}</option>
