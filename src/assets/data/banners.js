@@ -1,6 +1,9 @@
 import hero from "../images/banner/hero.png";
 import PanditCTA from "../images/banner/11.png";
 import ServiceArea from "../images/banner/Service.png";
+import hero1 from "../images/banner/hero1.png"
+import NamamiShiva from "../images/banner/NamamiShiva.mp4"
+import SandhyaAarati from "../images/banner/SandhyaAarati.mp4"
 
 export const banners = [
   {
@@ -20,5 +23,23 @@ export const banners = [
     title: "Where We Serve",
     subtitle: "Providing pandit services across Nepal.",
     image: ServiceArea,
+  },
+  {
+    id: 4,
+    title: "Trusted Pandits Provider",
+    subtitle: "We provide most trusted pandits over Nepal",
+    image: hero1,
+  },
+  {
+    id: 5,
+    title: "Namami Shiva Mantra",
+    subtitke: "Mantra for Shiva",
+    video: NamamiShiva,
+  },
+  {
+    id: 6,
+    title: "Sandhya Aarati",
+    subtitile: "Sandhya Aarati at Pashupati Nath Temple",
+    video: SandhyaAarati, 
   },
 ];
