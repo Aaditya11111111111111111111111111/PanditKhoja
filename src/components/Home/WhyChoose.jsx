@@ -1,5 +1,4 @@
 ﻿import Container from "../ui/Container";
-import FeatureCard from "../FeaturesHome/FeatureCard";
 import { useLang } from "../../context/LanguageContext";
 import { t } from "../../constants/translations";
 
@@ -12,6 +11,7 @@ const WhyChoose = () => {
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
+          {/* LEFT — text + stats */}
           <div>
             <span className="inline-block text-[#C62828] font-semibold text-sm uppercase tracking-widest mb-4">
               {w.eyebrow[lang]}
@@ -21,6 +21,7 @@ const WhyChoose = () => {
             </h2>
             <p className="mt-5 text-base md:text-lg text-[#2e4a70] leading-relaxed">{w.p1[lang]}</p>
             <p className="mt-4 text-base md:text-lg text-[#2e4a70] leading-relaxed">{w.p2[lang]}</p>
+
             <div className="mt-8 flex gap-8">
               <div>
                 <p className="text-2xl font-bold text-[#FF6F00]">200+</p>
@@ -37,15 +38,41 @@ const WhyChoose = () => {
             </div>
           </div>
 
-          <div className="space-y-4">
-            {w.features.map((item, index) => (
-              <FeatureCard
-                key={index}
-                icon={["✅","⚡","📍","🤝"][index]}
-                title={item[lang].title}
-                description={item[lang].description}
-              />
-            ))}
+          {/* RIGHT — Sanskrit mantra */}
+          <div className="flex flex-col items-center justify-center text-center px-4 py-8">
+
+            {/* OM symbol */}
+            <div className="text-6xl text-[#C62828] mb-6 leading-none">ॐ</div>
+
+            {/* Main mantra */}
+            <p className="text-2xl md:text-3xl font-serif text-[#1B365D] leading-relaxed tracking-wide">
+              ॐ असतो मा सद्गमय ।
+            </p>
+            <p className="text-2xl md:text-3xl font-serif text-[#1B365D] leading-relaxed tracking-wide mt-2">
+              तमसो मा ज्योतिर्गमय ।
+            </p>
+            <p className="text-2xl md:text-3xl font-serif text-[#1B365D] leading-relaxed tracking-wide mt-2">
+              मृत्योर्मा अमृतं गमय ।
+            </p>
+            <p className="text-2xl md:text-3xl font-serif text-[#C62828] leading-relaxed tracking-wide mt-2">
+              ॐ शान्तिः शान्तिः शान्तिः ॥
+            </p>
+
+            {/* Divider */}
+            <div className="w-16 h-0.5 bg-[#FF6F00] mx-auto my-6" />
+
+            {/* Translation */}
+            <p className="text-sm md:text-base text-[#4a6080] italic max-w-sm leading-relaxed">
+              {lang === "np"
+                ? "असत्यबाट सत्यतर्फ लैजा, अन्धकारबाट प्रकाशतर्फ लैजा, मृत्युबाट अमरत्वतर्फ लैजा।"
+                : "Lead me from untruth to truth, from darkness to light, from death to immortality."}
+            </p>
+
+            {/* Source */}
+            <p className="text-xs text-[#4a6080]/60 mt-3 tracking-widest uppercase">
+              — Bṛhadāraṇyaka Upaniṣad 1.3.28
+            </p>
+
           </div>
 
         </div>

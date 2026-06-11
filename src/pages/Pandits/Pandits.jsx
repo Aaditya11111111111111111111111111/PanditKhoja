@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Container from "../../components/ui/Container";
 import Button from "../../components/ui/Button";
 import { pandits } from "../../assets/data/pandits";
-import { useLang } from "../../context/LanguageContext";
+import { useLang } from "../../context/LanguageContext";  
 import { t } from "../../constants/translations";
 
 const Pandits = () => {
