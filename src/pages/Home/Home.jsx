@@ -9,10 +9,9 @@ import BecomePanditCTA from "../../components/Home/BecomePanditCTA";
 const Home = () => {
     return (
         <div>
-            <WhyChoose />
-            
-            <PopularServices />
             <Hero />
+            <PopularServices />
+            <WhyChoose />
             <FeaturedPandits />
             <BecomePanditCTA />
         </div>
