@@ -7,7 +7,7 @@ import About from "../pages/About/About";
 import Services from "../pages/Services/Services";
 import Contact from "../pages/Contact/Contact";
 import Pandits from "../pages/Pandits/Pandits";
-import PanditDetails from "../pages/PanditDetails";
+import PanditDetails from "../pages/PanditDetails/PanditDetails";
 
 const router = createBrowserRouter([
   {

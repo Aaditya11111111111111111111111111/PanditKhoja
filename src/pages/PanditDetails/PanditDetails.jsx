@@ -1,9 +1,9 @@
 ﻿import { useParams, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Container from "../components/ui/Container";
-import Button from "../components/ui/Button";
-import { pandits } from "../assets/data/pandits";
-import { useLang } from "../context/LanguageContext";
+import Container from "../../components/ui/Container";
+import Button from "../../components/ui/Button";
+import { pandits } from "../../assets/data/pandits";
+import { useLang } from "../../context/LanguageContext";
 
 const PanditDetails = () => {
   const { id } = useParams();
