@@ -1,10 +1,8 @@
-import { useRef, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import Container from "../../components/ui/Container";
-import { banners } from "../../assets/data/banners";
-import { useLang } from "../../context/LanguageContext";
-import { t } from "../../constants/translations";
-import { ROUTES } from "../../constants/router";
+﻿﻿import { useRef, useState, useEffect } from "react";
+import Container from "../../../components/ui/Container";
+import { banners } from "../../../assets/data/banners";
+import { useLang } from "../../../context/LanguageContext";
+import { t } from "../../../constants/translations";
 
 // Sandhya Aarati — banners id 6 (index 5)
 const heroVideo = banners[5];
@@ -89,20 +87,18 @@ const Hero = () => {
           </p>
 
           <div className="mt-6 sm:mt-10 flex flex-row justify-center gap-3">
-            <Link
-              to={ROUTES.PANDITS}
+            <button
               onClick={(e) => e.stopPropagation()}
               className="px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full font-medium text-sm sm:text-base bg-[#FF6F00] text-white hover:bg-[#e65c00] transition cursor-pointer"
             >
               {h.btn1[lang]}
-            </Link>
-            <Link
-              to={ROUTES.BECOME_PANDIT}
+            </button>
+            <button
               onClick={(e) => e.stopPropagation()}
               className="px-5 sm:px-8 py-2.5 sm:py-3.5 rounded-full font-medium text-sm sm:text-base border border-[#d4bfae] text-gray-200 hover:bg-white/10 transition cursor-pointer"
             >
               {h.btn2[lang]}
-            </Link>
+            </button>
           </div>
 
           <div className="mt-6 sm:mt-10 flex flex-row justify-center gap-6 sm:gap-16 text-center divide-x divide-white/20">

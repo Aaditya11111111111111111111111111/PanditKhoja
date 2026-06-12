@@ -1,11 +1,13 @@
 ﻿import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { NAV_LINKS } from "../../constants/navigation";
 import { useLang } from "../../context/LanguageContext";
 import { t } from "../../constants/translations";
+import { ROUTES } from "../../constants/router";
 
 const navLabelMap = {
   Home:     "home",
+  About:    "about",
   Services: "services",
   Pandits:  "pandits",
   Contact:  "contact",
@@ -71,9 +73,12 @@ const Navbar = () => {
               </button>
             </div>
 
-            <button className="px-5 py-2 rounded-full bg-[#FF6F00] text-white font-medium hover:bg-[#e65c00] transition cursor-pointer text-sm">
+            <Link
+              to={ROUTES.BECOME_PANDIT}
+              className="px-5 py-2 rounded-full bg-[#FF6F00] text-white font-medium hover:bg-[#e65c00] transition cursor-pointer text-sm"
+            >
               {t.nav.becomePandit[lang]}
-            </button>
+            </Link>
           </div>
 
           {/* Mobile right — lang toggle + hamburger */}
@@ -134,9 +139,12 @@ const Navbar = () => {
           ))}
 
           <div className="mt-3 pt-3 border-t border-[#f0e6d8]">
-            <button className="w-full px-5 py-2.5 rounded-full bg-[#FF6F00] text-white font-medium hover:bg-[#e65c00] transition cursor-pointer text-sm">
+            <Link
+              to={ROUTES.BECOME_PANDIT}
+              className="block w-full text-center px-5 py-2.5 rounded-full bg-[#FF6F00] text-white font-medium hover:bg-[#e65c00] transition cursor-pointer text-sm"
+            >
               {t.nav.becomePandit[lang]}
-            </button>
+            </Link>
           </div>
         </div>
       )}

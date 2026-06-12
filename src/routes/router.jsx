@@ -8,6 +8,7 @@ import Services from "../pages/Services/Services";
 import Contact from "../pages/Contact/Contact";
 import Pandits from "../pages/Pandits/Pandits";
 import PanditDetails from "../pages/PanditDetails/PanditDetails";
+import BecomePandit from "../pages/BecomePandit/BecomePandit";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "pandits/:id",
         element: <PanditDetails />,
+      },
+      {
+        path: "become-a-pandit",
+        element: <BecomePandit />,
       },
     ],
   },

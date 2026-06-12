@@ -1,7 +1,9 @@
-﻿import Container from "../ui/Container";
+﻿import { Link } from "react-router-dom";
+import Container from "../ui/Container";
 import { banners } from "../../assets/data/banners";
 import { useLang } from "../../context/LanguageContext";
 import { t } from "../../constants/translations";
+import { ROUTES } from "../../constants/router";
 
 const ctaBanner = banners[0];
 
@@ -34,9 +36,12 @@ const BecomePanditCTA = () => {
             <button className="px-8 py-3.5 rounded-full font-medium text-base bg-white text-[#FF6F00] hover:bg-[#fff3e0] transition cursor-pointer">
               {c.btn1[lang]}
             </button>
-            <button className="px-8 py-3.5 rounded-full font-medium text-base bg-white/10 border border-white text-white hover:bg-white/20 backdrop-blur-sm transition cursor-pointer">
+            <Link
+              to={ROUTES.BECOME_PANDIT}
+              className="px-8 py-3.5 rounded-full font-medium text-base bg-white/10 border border-white text-white hover:bg-white/20 backdrop-blur-sm transition cursor-pointer"
+            >
               {c.btn2[lang]}
-            </button>
+            </Link>
           </div>
 
           <p className="mt-8 text-sm text-white/60">{c.footer[lang]}</p>

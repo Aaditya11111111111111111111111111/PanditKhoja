@@ -1,7 +1,7 @@
 ﻿import { useRef, useState, useEffect, useCallback } from "react";
 import Container from "../ui/Container";
 import SectionTitle from "../ui/SectionTitle";
-import ServiceCard from "../Services/ServiceCard";
+import ServiceCard from "./Services/ServiceCard";
 import { popularServices } from "../../assets/data/popularServices";
 import { useLang } from "../../context/LanguageContext";
 import { t } from "../../constants/translations";

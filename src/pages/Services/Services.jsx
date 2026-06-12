@@ -1,5 +1,5 @@
 ﻿import Container from "../../components/ui/Container";
-import ServiceCard from "../../components/Services/ServiceCard";
+import ServiceCard from "../../components/Home/Services/ServiceCard";
 import { popularServices } from "../../assets/data/popularServices";
 import { useLang } from "../../context/LanguageContext";
 import { t } from "../../constants/translations";

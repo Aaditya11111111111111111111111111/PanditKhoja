@@ -5,4 +5,5 @@ export const ROUTES = {
   CONTACT: "/contact",
   PANDITS: "/pandits",
   PANDIT_DETAILS: (id) => `/pandits/${id}`,
+  BECOME_PANDIT: "/become-a-pandit",
 };

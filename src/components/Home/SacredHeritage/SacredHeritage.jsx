@@ -1,16 +1,16 @@
 import React from "react";
-import Container from "../../components/ui/Container";
-import { useLang } from "../../context/LanguageContext";
-import { t } from "../../constants/translations";
+import Container from "../../ui/Container";
+import { useLang } from "../../../context/LanguageContext";
+import { t } from "../../../constants/translations";
 
-const About= () => {
+const SacredHeritage = () => {
   const { lang } = useLang();
   const data = t.sacredHeritage;
 
   return (
     <section className="py-24 bg-[#F5F5F5]">
       <Container>
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl">
 
           <span className="inline-block text-sm font-semibold tracking-[0.25em] uppercase text-[#C62828]">
             {data.badge[lang]}
@@ -45,4 +45,4 @@ const About= () => {
   );
 };
 
-export default About;
+export default SacredHeritage;

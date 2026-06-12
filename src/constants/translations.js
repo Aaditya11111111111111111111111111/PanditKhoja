@@ -2,6 +2,7 @@ export const t = {
   // Navbar
   nav: {
     home:       { en: "Home",     np: "गृहपृष्ठ" },
+    about:      { en: "About",    np: "हाम्रोबारे" },
     services:   { en: "Services", np: "सेवाहरू" },
     pandits:    { en: "Pandits",  np: "पण्डितहरू" },
     contact:    { en: "Contact",  np: "सम्पर्क" },
@@ -151,5 +152,87 @@ export const t = {
       { en: { title: "Shraddha", description: "Honoring ancestors with respect and gratitude." },
         np: { title: "श्राद्ध", description: "आदर र कृतज्ञताका साथ पुर्खाहरूलाई सम्मान गर्ने कर्म।" } },
     ],
+  },
+
+  // Relief section
+  relief: {
+    heading:   { en: "Relieve Your Mind & Heart",           np: "मन र हृदयलाई शान्ति दिनुहोस्" },
+    sub:       { en: "Take a moment. Let the sacred sounds of Sandhya Aarati wash away your stress.", np: "एक पल रोकिनुहोस्। सन्ध्या आरतीको पवित्र ध्वनिले तपाईंको तनाव हटाउन दिनुहोस्।" },
+    btnUnmute: { en: "Click to relieve — play sacred sounds", np: "क्लिक गर्नुहोस् — पवित्र ध्वनि सुन्नुहोस्" },
+    btnMute:   { en: "Click to mute",                       np: "म्युट गर्न क्लिक गर्नुहोस्" },
+    hint:      { en: "Sandhya Aarati · Pashupatinath Temple",  np: "सन्ध्या आरती · पशुपतिनाथ मन्दिर" },
+  },
+
+  // Become a Pandit page
+  becomePandit: {
+    // BecomeHero
+    hero: {
+      heading:  { en: "Become a Pandit on", np: "पण्डितखोजामा पण्डित बन्नुहोस्" },
+      subtitle: { en: "Share your knowledge, reach more families, and help preserve Nepal's sacred traditions.", np: "आफ्नो ज्ञान साझा गर्नुहोस्, बढी परिवारसम्म पुग्नुहोस् र नेपालको पवित्र परम्परा संरक्षण गर्न मद्दत गर्नुहोस्।" },
+    },
+    // Benefits
+    benefits: {
+      eyebrow:  { en: "Why Join Us",          np: "हामीमा किन सामेल हुने?" },
+      heading:  { en: "What you gain by joining", np: "सामेल हुँदा के पाउनुहुन्छ?" },
+      cards: [
+        {
+          en: { title: "Reach More Families",    description: "Connect with people looking for trusted pandits across Nepal and beyond." },
+          np: { title: "बढी परिवारसम्म पुग्नुहोस्", description: "नेपाल र त्यसभन्दा बाहिर विश्वसनीय पण्डित खोज्नेहरूसँग जोडिनुहोस्।" },
+        },
+        {
+          en: { title: "Build Your Reputation",  description: "Showcase your experience and specialties to families who value authenticity." },
+          np: { title: "आफ्नो प्रतिष्ठा बनाउनुहोस्", description: "प्रामाणिकतालाई महत्त्व दिने परिवारहरूलाई आफ्नो अनुभव र विशेषता देखाउनुहोस्।" },
+        },
+        {
+          en: { title: "Preserve Tradition",     description: "Help pass sacred knowledge and rituals to future generations." },
+          np: { title: "परम्परा संरक्षण गर्नुहोस्", description: "पवित्र ज्ञान र संस्कारहरू भावी पुस्तासम्म पुर्‍याउन मद्दत गर्नुहोस्।" },
+        },
+      ],
+    },
+    // RegistrationForm
+    form: {
+      eyebrow:        { en: "Registration",             np: "दर्ता" },
+      heading:        { en: "Apply to Join",             np: "सामेल हुन आवेदन दिनुहोस्" },
+      sub:            { en: "Fill in the details below and we'll get back to you.", np: "तलको विवरण भर्नुहोस्, हामी तपाईंलाई सम्पर्क गर्नेछौं।" },
+      labelName:      { en: "Full Name",                np: "पूरा नाम" },
+      phName:         { en: "e.g. Ram Prasad Sharma",   np: "जस्तै: राम प्रसाद शर्मा" },
+      labelPhone:     { en: "Phone Number",             np: "फोन नम्बर" },
+      phPhone:        { en: "e.g. 98XXXXXXXX",          np: "जस्तै: ९८XXXXXXXX" },
+      labelDistrict:  { en: "District",                 np: "जिल्ला" },
+      phDistrict:     { en: "Select your district",     np: "आफ्नो जिल्ला छान्नुहोस्" },
+      labelExp:       { en: "Years of Experience",      np: "अनुभवको वर्षहरू" },
+      phExp:          { en: "e.g. 10",                  np: "जस्तै: १०" },
+      labelSpec:      { en: "Specialties",              np: "विशेषताहरू" },
+      labelLang:      { en: "Languages Spoken",         np: "बोल्ने भाषाहरू" },
+      labelIntro:     { en: "Short Introduction",       np: "संक्षिप्त परिचय" },
+      phIntro:        { en: "Tell families a little about yourself, your training, and your experience...", np: "परिवारहरूलाई आफ्नो बारेमा, तालिम र अनुभवको बारेमा थोरै बताउनुहोस्..." },
+      submit:         { en: "Apply to Join",            np: "सामेल हुन आवेदन दिनुहोस्" },
+      successMsg:     { en: "Application submitted! We will contact you soon.", np: "आवेदन पेश गरियो! हामी चाँडै तपाईंलाई सम्पर्क गर्नेछौं।" },
+      specialties: [
+        { en: "Marriage Ceremony",   np: "विवाह संस्कार" },
+        { en: "Griha Pravesh",        np: "गृहप्रवेश" },
+        { en: "Satyanarayan Pooja",   np: "सत्यनारायण पूजा" },
+        { en: "Bratabanda Ceremony",  np: "ब्रतबन्ध संस्कार" },
+        { en: "Shraddha Ceremony",    np: "श्राद्ध संस्कार" },
+        { en: "Special Poojas",       np: "विशेष पूजाहरू" },
+        { en: "Namkaran",             np: "नामकरण" },
+        { en: "Pasni",                np: "पास्नी" },
+        { en: "Funeral Rites",        np: "अन्त्येष्टि संस्कार" },
+      ],
+      languages: [
+        { en: "Nepali",    np: "नेपाली" },
+        { en: "Hindi",     np: "हिन्दी" },
+        { en: "Maithili",  np: "मैथिली" },
+        { en: "Bhojpuri",  np: "भोजपुरी" },
+        { en: "Newari",    np: "नेवारी" },
+        { en: "English",   np: "अंग्रेजी" },
+      ],
+    },
+    // FinalCTA
+    finalCta: {
+      heading:  { en: "Together, let's preserve Nepal's spiritual heritage.", np: "सँगै, नेपालको आध्यात्मिक सम्पदा संरक्षण गरौं।" },
+      sub:      { en: "Have questions before applying? We're here to help.", np: "आवेदन दिनुअघि प्रश्नहरू छन्? हामी सहयोगका लागि यहाँ छौं।" },
+      btn:      { en: "Contact Us",  np: "सम्पर्क गर्नुहोस्" },
+    },
   },
 };
